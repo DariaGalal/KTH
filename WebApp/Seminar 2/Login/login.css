@@ -1,0 +1,86 @@
+body{
+  background-image: url("../pictures/background.jpg");
+    background-size: cover;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  opacity: 0.5;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+h1{
+  text-shadow: 3px 3px black;
+  color: white;
+  background-image: url("../pictures/header.jpg");
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  display: block;
+}
+.home{
+  margin-right: 2rem;
+  font-size: 20px;
+  color: white;
+}
+.calendar{
+  font-size: 20px;
+  color: white;
+}
+
+button {
+    background-color: #ccffcc;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+}
+
+img.avatar {
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+}
+ 
+.container {
+    border: 1px solid black;
+    background: white;
+    padding: 16px;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+  }

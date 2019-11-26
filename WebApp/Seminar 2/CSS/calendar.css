@@ -1,0 +1,94 @@
+body {
+  background-image: url("../pictures/background.jpg");
+    background-size: cover;
+    text-align: center;
+  }
+  a:link, a:active, a:visited {
+    text-decoration: none !important;
+    color: white;
+  }
+  a:hover{
+    opacity: 0.5;
+  }
+  .loginborder{
+    display: block;
+    font-size: 15px;
+    text-align: right;
+    margin-right: 15px;
+    margin-top: -65px;
+  }
+  h1{
+    text-shadow: 3px 3px black;
+    color: white;
+    background-image: url("../pictures/header.jpg");
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /*margin: 2rem;*/
+    margin-bottom: 1rem;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    display: block;
+  }
+  .icon{
+    text-shadow: 2px 2px black;
+    color: white;
+    margin: 2rem;
+    margin-right: 5rem;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    display: block;
+    text-align: center;
+    margin: 2rem;
+    margin-bottom: -1rem;
+  }
+  .calendar-head{
+    margin: 2rem;
+    font-size: 3em;
+    font-family: 'Amatic SC', cursive;
+  }
+  .week-days{
+    margin: 1rem;
+    word-spacing: 145px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 15px;
+  }
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  background-color: white;
+  padding: 10px;
+}
+.pancake {
+  background-image: url("../pictures/pancakeicon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.meatballs{
+  background-image: url("../pictures/meatballsicon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.day {
+  display: block;
+  min-width: inherit;
+  min-height: inherit;
+}
+
+.grid-item {
+  background-color: white;
+  border: 1px solid black;
+  min-height: 3rem;
+  min-width: 3rem;
+  font-size: 13px;
+  text-align: left;
+}
+.home{
+  margin-right: 2rem;
+  font-size: 20px;
+}
+.calendar{
+  font-size: 20px;
+}
