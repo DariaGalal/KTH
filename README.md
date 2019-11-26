@@ -1,2 +1,3 @@
-# KTH
-Projects and assignments from KTH
+# A student at KTH
+
+Various assignments and projects.
