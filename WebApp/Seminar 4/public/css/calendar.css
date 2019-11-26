@@ -1,0 +1,42 @@
+.calendar-head{
+  margin: 2rem;
+  font-size: 2em;
+}
+.week-days{
+  margin: 1rem;
+  word-spacing: 3rem;
+  font-size: 15px;
+}
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto auto auto auto;
+background-color: white;
+padding: 10px;
+}
+.pancake {
+background-image: url("{{asset('../img/pancakeicon.png')}}");
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+.meatballs{
+background-image: url("{{asset('../img/meatballsicon.png')}}");
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.day {
+display: block;
+min-width: inherit;
+min-height: inherit;
+}
+
+.grid-item {
+background-color: white;
+border: 1px solid black;
+min-height: 3rem;
+min-width: 3rem;
+font-size: 13px;
+text-align: left;
+}
