@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1">
+		<link href = "css/styles.css" rel = "stylesheet"/>
+		<title>Converter</title>
+	</head>
+	<body>
+		<h1>Currency Converter</h1>
+		<div class="container">
+ 			<form method="POST" class="convert" th:action="@{/}" th:object="${convert}">
+ 			
+ 			    <label for="from">Currency exchange from</label>
+    			<select th:field="*{from}">
+      				<option value="SEK">SEK</option>
+      				<option value="USD">USD</option>
+      				<option value="EUR">EUR</option>
+      				<option value="GBP">GBP</option>
+    			</select>
+    			
+				<label for="to">Currency exchange to</label>
+    			<select th:field="*{to}">
+      				<option value="SEK">SEK</option>
+      				<option value="USD">USD</option>
+      				<option value="EUR">EUR</option>
+      				<option value="GBP">GBP</option>
+    			</select>
+
+    			<label for="amount">Amount of currency</label>
+    			<input type="text" name="amount" placeholder="The amount you want to convert.." required th:field="*{amount}">
+    			<p th:if="${#fields.hasErrors('amount')}" th:errors="*{amount}">Must be higher than 0</p>
+    			<input class="submit" type="submit" value="Convert" name="submit">
+
+  			</form>
+		</div>
+		<div class="result">
+			<h3>Result</h3>
+			
+			<div>
+			<p th:text="${convert.result}"/>
+			</div>
+
+		</div>
+		
+	</body>
+</html>
