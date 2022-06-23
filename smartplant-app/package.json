@@ -30,7 +30,7 @@
     "ibmiotf": "0.2.x",
     "jquery": "^3.4.1",
     "jquery.easing": "^1.4.1",
-    "jsdom": "^15.0.0",
+    "jsdom": "^16.5.0",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.24.0",
     "msbuild": "^1.1.2",
